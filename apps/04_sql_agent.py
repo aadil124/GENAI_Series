@@ -10,7 +10,7 @@ from langchain.agents import create_agent
 import streamlit as st
 
 
-db = SQLDatabase.from_uri("sqlite:///my_tasks.db")
+# db = SQLDatabase.from_uri("sqlite:///my_tasks.db")
 db.run("""
     CREATE TABLE IF NOT EXISTS tasks (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
