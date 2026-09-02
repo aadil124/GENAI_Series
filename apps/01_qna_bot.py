@@ -8,7 +8,7 @@
 # # llm = ChatGoogleGenerativeAI(model = "gemini-2.5-flash")
 # llm = ChatGroq(model = "qwen/qwen3-32b")
 
-st.title("🤖 Ask Buddy - AI QnA Bot")
+# st.title("🤖 Ask Buddy - AI QnA Bot")
 # st.markdown("My QnA Bot With LangChain and Google Gemini! 🔥🔥🔥 ")
 
 # if "messages" not in st.session_state:
