@@ -37,7 +37,7 @@ from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 import streamlit as st
-import re
+# import re
 
 # ================================
 # 🔹 LOAD ENV VARIABLES
