@@ -1,12 +1,12 @@
 # from dotenv import load_dotenv
-# # from langchain_google_genai import ChatGoogleGenerativeAI
+# from langchain_google_genai import ChatGoogleGenerativeAI
 # from langchain_groq import ChatGroq
 # import streamlit as st
 
 # load_dotenv()
 
 
-# # llm = ChatGoogleGenerativeAI(model = "gemini-2.5-flash")
+# llm = ChatGoogleGenerativeAI(model = "gemini-2.5-flash")
 # llm = ChatGroq(model = "qwen/qwen3-32b")
 
 # st.title("🤖 Ask Buddy - AI QnA Bot")
@@ -37,7 +37,7 @@ from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 import streamlit as st
-# import re
+import re
 
 # ================================
 # 🔹 LOAD ENV VARIABLES
