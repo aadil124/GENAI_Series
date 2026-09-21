@@ -152,17 +152,17 @@ def process_document(path):
 
 
 ### upload ui
-# if not st.session_state.document_uploaded:
-#     uploaded = st.file_uploader(label="Select PDF Files", type=["pdf"], accept_multiple_files=True)
-#     if uploaded:
-#         with st.spinner("Processing..."):
-#             path = "./docs_file/"
-#             for file in uploaded:
-#                 with open(path + file.name, "wb") as f:
-#                     f.write(file.getvalue())
+if not st.session_state.document_uploaded:
+    uploaded = st.file_uploader(label="Select PDF Files", type=["pdf"], accept_multiple_files=True)
+    if uploaded:
+        with st.spinner("Processing..."):
+            path = "./docs_file/"
+            for file in uploaded:
+                with open(path + file.name, "wb") as f:
+                    f.write(file.getvalue())
 
-#             process_document(path)
-#             st.rerun()
+            process_document(path)
+            st.rerun()
 
             
 ## chat ui
